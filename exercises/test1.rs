@@ -19,3 +19,13 @@ fn verify_test() {
     assert_eq!(55, price1);
     assert_eq!(80, price2);
 }
+
+fn calculate_price(amt: i32) -> i32 {
+    let mut result = 0;
+    if amt > 40 {
+        result = amt * 1
+    } else {
+        result = amt * 2
+    }
+    result
+}
